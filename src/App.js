@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import Hero from './components/sections/Hero'
 import Skills from './components/sections/Skills';
 import Education from './components/sections/Eduation';
-// import EducationCard from './components/cards/EducationCard';
+import Project from './components/sections/Project';
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -26,7 +27,8 @@ function App() {
       <Hero />
       <Skills />
       {/* <EducationCard/> */}
-      <Education/>
+      <Education />
+      <Project/>
     </Body>
   </ThemeProvider>
   );
