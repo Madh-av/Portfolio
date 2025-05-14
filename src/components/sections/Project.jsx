@@ -101,8 +101,7 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of projects. From WEB apps to ML based predictions, Here are some of my projects.
         </Desc>
 
         <ToggleButtonGroup>
