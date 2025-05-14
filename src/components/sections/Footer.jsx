@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
-import { EmailRounded, LinkedIn } from "@mui/icons-material";
+import { LinkedIn } from "@mui/icons-material";
 
 const FooterContainer = styled.footer`
   width: 100%;
@@ -28,34 +28,17 @@ const Logo = styled.div`
   margin-bottom: 0.5rem;
 `;
 
-const Nav = styled.nav`
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-
-  @media (max-width: 480px) {
-    gap: 1rem;
-  }
-`;
-
-const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
-  text-decoration: none;
+const ContactText = styled.p`
   font-size: 1rem;
-  transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
+  color: ${({ theme }) => theme.text_primary};
+  margin: 0.5rem 0;
 `;
 
 const SocialMediaIcons = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 `;
 
 const SocialMediaIcon = styled.a`
@@ -78,18 +61,8 @@ const Footer = () => (
   <FooterContainer>
     <FooterWrapper>
       <Logo>{Bio.name}</Logo>
-
-      <Nav>
-        <NavLink href={`mailto:${Bio.email}`}>{Bio.email}</NavLink>
-        <NavLink href={Bio.linkedin} target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </NavLink>
-      </Nav>
-
+      <ContactText>Email: {Bio.email}</ContactText>
       <SocialMediaIcons>
-        <SocialMediaIcon href={`mailto:${Bio.email}`}>
-          <EmailRounded />
-        </SocialMediaIcon>
         <SocialMediaIcon
           href={Bio.linkedin}
           target="_blank"
@@ -98,7 +71,6 @@ const Footer = () => (
           <LinkedIn />
         </SocialMediaIcon>
       </SocialMediaIcons>
-
       <Copyright>
         &copy; {new Date().getFullYear()} {Bio.name}. All rights reserved.
       </Copyright>
