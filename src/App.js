@@ -4,7 +4,7 @@ import { darkTheme } from "./utils/Themes";
 import Navbar  from './components/Navbar';
 import styled from 'styled-components';
 // import { BrowserRouter } from "react-router-dom";
-import Hero from './components/sections/Hero'
+import Hero from './components/sections/About'
 import Skills from './components/sections/Skills';
 import Education from './components/sections/Eduation';
 import Project from './components/sections/Project';

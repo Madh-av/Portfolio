@@ -102,7 +102,7 @@ const Tit = styled.div`
 export default function EducationAccordion() {
   const [openId, setOpenId] = useState(null);
   return (
-    <Section>
+    <Section id="Education">
       <Wrapper>
         <Tit>Education</Tit>
       </Wrapper>

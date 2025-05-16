@@ -1,16 +1,12 @@
 export const Bio = {
   name: "Madhav",
-  roles: [
-    "an Emerging Developer",
-    "a DSA enthusiast",
-    "a Machine Learning Explorer",
-    "a Programmer",
-  ],
+  roles: ["an Dev-to-Be", "a DSA enthusiast", "a ML Explorer", "a Programmer"],
   description:
     "I’m a proactive B.Tech Engineering Science student at IIT Jodhpur with hands-on experience in C++, full-stack JavaScript, and machine-learning projects. I thrive on tackling complex problems—whether designing a modular expense-manager in C++, building interactive web apps with React, or training fraud-detection models in Python. A lifelong learner with a growth mindset, I continually seek out new technologies and best practices to deliver clean, maintainable code and polished user experiences. Energetic and collaborative, I’m committed to driving real impact and exceeding expectations on every project.",
   github: "https://github.com/Madh-av/",
   email: "b23es1021@iitj.ac.in",
-  resume: "https://www.overleaf.com/project/681ef76a00ae330202781d6d",
+  resume:
+    "https://drive.google.com/file/d/10MqxuHNljfLoVojzpTJGCmMZvJK8D0D_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/madhav-95159125a/",
 };
 
